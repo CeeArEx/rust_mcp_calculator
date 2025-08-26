@@ -1,0 +1,15 @@
+[package]
+name = "rust_mcp_calculator"
+version = "0.1.0"
+edition = "2024"
+
+
+[dependencies]
+# Use the full name for clarity, though `mcp-sdk` also works
+rust-mcp-sdk = { version = "0.6.0", features = ["server", "macros", "2025_06_18"] }
+
+tokio = { version = "1", features = ["full"] }
+serde = "1.0"
+serde_json = "1.0"
+async-trait = "0.1"
+
